@@ -204,6 +204,7 @@ window.onload = function () {
     }
     document.getElementsByClassName("back")[0].addEventListener("click", function () {
         pauseAnimation();
+        stopTimer();
         document.getElementsByClassName('game-over')[0].classList.add('hide');
         toggleGame();
         toggleMenu();
