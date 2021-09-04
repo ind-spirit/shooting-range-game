@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="index.js"> </script>
+    <title>Document</title>
+  </head>
+  <body class="vh-100 flex">
+    <div class="app container-xxl flex h-50">
+      <div class="menu list-group w-100 h-100 h3">
+        <button class="start-btn menu-item list-group-item">старт</button>
+        <button class="difficulty-btn menu-item list-group-item">сложность</button>
+        <button class="tooltip-btn menu-item list-group-item">подсказка</button>
+        <div class="difficulty hide"> 
+          <label class="form-label" for="customRange1">Сложность: 2 </label>
+          <input class="form-range" type="range" id="customRange1" min="1" max="3">
+          <button class="back-to-menu btn btn-primary">назад</button>
+        </div>
+        <div class="tooltip-screen flex hide"> 
+          <div class="tooltip-element"><img src="./assets/news.svg" alt="news">
+            <div class="tooltip__text">+1 балл</div>
+          </div>
+          <div class="tooltip-element"><img src="./assets/fake-news.svg" alt="fake-news">
+            <div class="tooltip__text">-3 балла</div>
+          </div>
+          <div class="tooltip-element"><img src="./assets/special.svg" alt="spicals">
+            <div class="tooltip__text">+2 балла</div>
+          </div>
+          <button class="back-to-menu btn btn-primary">назад</button>
+        </div>
+      </div>
+      <div class="game h-100 w-100 hide"> 
+        <div class="first-line line">
+          <div class="targets-container pause"></div>
+          <div class="targets-container pause"></div>
+        </div>
+        <div class="second-line line"> 
+          <div class="targets-container pause"></div>
+          <div class="targets-container pause"></div>
+        </div>
+        <div class="third-line line">
+          <div class="targets-container pause"></div>
+          <div class="targets-container pause"></div>
+        </div>
+      </div>
+      <div class="game-over container-xxl hide">ваш счет: </div>
+    </div>
+    <div class="info list-group hide">
+      <div class="score list-group-item">0</div>
+      <div class="time list-group-item">60</div>
+      <button class="stop list-group-item">стоп</button>
+      <button class="back list-group-item">назад</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
